@@ -25,6 +25,11 @@ class Calculator {
         }
         return (double) input_nums[0] / input_nums[1];
     }
+       
+    double calcSqrt() {
+        return Math.sqrt(input_nums[0]);
+    }
+    
     
     
     
