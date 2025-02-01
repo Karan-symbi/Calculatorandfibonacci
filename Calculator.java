@@ -45,6 +45,15 @@ class Calculator {
         }
         return b;
     }
+       
+    double calcMean(int[] arr) {
+        int sum = 0;
+        for (int value : arr) {
+            sum += value;
+        }
+        return (double) sum / arr.length;
+    }
+    
     
     
     
