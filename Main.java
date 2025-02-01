@@ -20,6 +20,73 @@ class Main {
 		while (true) {
 			System.out.print("\nChoose an option: ");
 			int option = choice.nextInt();
-
+			switch (option) {
+				case 1: {
+					System.out.println("Sum = " + calculator.calcSum());
+					break;
+				}
+				case 2: {
+					System.out.println("Difference = " + calculator.calcDiff());
+					break;	
+				}
+				case 3: {
+					System.out.println("Product = " + calculator.calcProd());
+					break;
+				}
+				case 4: {
+					try {
+						System.out.println("Quotient = " + calculator.calcDiv());
+					} catch (ArithmeticException e) {
+						System.out.println(e.getMessage());
+					}
+					break;
+				}
+				case 5: {
+					System.out.println("Square Root = " + calculator.calcSqrt());
+					break;
+				}
+				case 6: {
+					System.out.print("Enter a number for Fibonacci: ");
+					int num = choice.nextInt();
+					System.out.println("Fibonacci(" + num + ") = " + calculator.calcFib(num));
+					break;
+				}
+				case 7: {
+					System.out.print("Enter the size of the array: ");
+					int size = choice.nextInt();
+					int[] arr = new int[size];
+					System.out.println("Enter the numbers:");
+					for (int i = 0; i < size; i++) {
+						arr[i] = choice.nextInt();
+					}
+					System.out.println("Mean = " + calculator.calcMean(arr));
+					break;
+				}
+				case 8: {
+					System.out.print("Enter the size of the array: ");
+					int size = choice.nextInt();
+					int[] arr = new int[size];
+					System.out.println("Enter the numbers:");
+					for (int i = 0; i < size; i++) {
+						arr[i] = choice.nextInt();
+					}
+					System.out.println("Mode = " + calculator.calcMode(arr));
+					break;
+				}
+				case 9: {
+					System.out.println("Exiting program. Goodbye!");
+					choice.close();
+					System.exit(0);
+				}
+				default: {
+					System.out.println("Invalid option. Please try again.");
+					break;
+				}
+			}
+		}
+	}
 }
+
+
+
 	
