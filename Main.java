@@ -1,3 +1,6 @@
+//Name - Karan Chauhan
+//Prn - 23070126053
+//class- AIML A3
 import java.util.Scanner;
 class Main {
 
