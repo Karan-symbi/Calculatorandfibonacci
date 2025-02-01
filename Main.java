@@ -17,5 +17,9 @@ class Main {
 		System.out.println("7. Mean (of custom array)");
 		System.out.println("8. Mode (of custom array)");
 		System.out.println("9. Exit");
+		while (true) {
+			System.out.print("\nChoose an option: ");
+			int option = choice.nextInt();
 
 }
+	
