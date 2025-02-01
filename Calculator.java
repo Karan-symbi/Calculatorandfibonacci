@@ -10,4 +10,9 @@ class Calculator {
         return input_nums[0] + input_nums[1];
     }
     
+    int calcDiff() {
+        return input_nums[0] - input_nums[1];
+    }
+    
+    
 }
